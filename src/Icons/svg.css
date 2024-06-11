@@ -1,0 +1,13 @@
+.download-icon{
+    vertical-align: bottom;
+}
+.download-icon path{
+    fill:#a3a3a3;
+
+}
+
+
+.download-icon.active path{
+    fill:#000;
+
+}
