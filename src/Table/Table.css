@@ -1,0 +1,69 @@
+
+#data-table-wrapper{
+  margin:10px;
+  border: 1px solid #dedede;
+}
+
+.data-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.data-table tr{
+  border: 1px solid #dedede;
+}
+.data-table th::first-letter,.data-table .status::first-letter{
+  text-transform: uppercase;
+}
+
+.data-table td,.data-table th{
+  text-align: left;
+  padding: 12px;
+}
+
+.data-table caption button{
+  border: 0;
+  color: #a3a3a3;
+  background: white;
+  font-size: 20px;
+  cursor: not-allowed;
+  pointer-events:none;
+}
+
+.data-table caption button.active{
+  color: #000;
+  cursor: pointer;
+  pointer-events:unset;
+}
+
+.data-table .status[data-status="available"]::before{
+  content: '';
+  position: absolute;
+  transform: translate(-20px, 50%);
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+caption{
+  padding: 15px;
+  font-size: 20px;
+  text-align: left;
+}
+
+caption .selected-text{
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+input[type="checkbox"]{
+  width: 20px; 
+  height: 20px;
+}
+
+.data-table tbody tr:hover{
+  background-color: #f7f7f7;
+}
+.data-table tbody tr.active{
+  background-color: #e9e9e9;
+}
